@@ -1,0 +1,47 @@
+/* styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+  .signup__form {
+    width: 90%;
+  }
+  .signup__inputs {
+    width: 100%;
+  }
+}
+
+/* styles for screens larger than 600px */
+@media only screen and (min-width: 600px) {
+  .signup__form {
+    width: 300px;
+  }
+  .signup__inputs {
+    width: 100%;
+  }
+}
+
+/* center the form on the page */
+.signup__form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* add spacing between the inputs */
+.signup__inputs {
+  margin-bottom: 15px;
+}
+
+/* style the submit button */
+.signup__btn {
+  background-color: #4CAF50; /* green */
+  color: white;
+  padding: 14px 20px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* change the background color of the button on hover */
+.signup__btn:hover {
+  background-color: #45a049;
+}
