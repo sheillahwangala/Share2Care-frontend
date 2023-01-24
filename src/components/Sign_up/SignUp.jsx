@@ -15,7 +15,7 @@ function SignUp() {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      fetch("/api/v1/signup", {
+      fetch("http://127.0.0.1:3000/api/v1/signup", {
         method: "POST",
         headers: {
           Accepts: "application/json",

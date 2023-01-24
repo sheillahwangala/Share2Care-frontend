@@ -13,21 +13,21 @@ import Template from './components/template/Template';
 function App() {
   return (
     <div>
-    <BrowserRouter>
-      <Template>
-        <Routes>
-        <Route path="/signup" index element={<SignUp />} />
-        <Route path="/login" index element={<Login />} />
-          <Route path="/" index element={<HomePage />} />
-          <Route path="/farmproducts" index element={<FarmProducts />} />
-          <Route path="/farmers-page" index element={<FarmersPage />} />
-          <Route path="/sellproduct" index element={<AddProduct />} />
-          <Route path="/add-donation" index element={<AddDonation />} />
-          <Route path="/donations" index element={<Donations />} />
-        </Routes>
-      </Template>
-    </BrowserRouter>
-  </div>
+      <BrowserRouter>
+        <Template>
+          <Routes>
+            <Route path="/signup" index element={<Login />} />
+            <Route path="/login" index element={<Login />} />
+            <Route path="/" index element={<HomePage />} />
+            <Route path="/farmproducts" index element={<FarmProducts />} />
+            <Route path="/farmers-page" index element={<FarmersPage />} />
+            <Route path="/sellproduct" index element={<AddProduct />} />
+            <Route path="/add-donation" index element={<AddDonation />} />
+            <Route path="/donations" index element={<Donations />} />
+          </Routes>
+        </Template>
+      </BrowserRouter>
+    </div>
   );
 }
 
