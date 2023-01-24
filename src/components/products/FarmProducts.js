@@ -8,7 +8,7 @@ function FarmProducts() {
     const [filterQuery, setFilterQuery] = useState("");
 
     useEffect(() => {
-        fetch("APIHost/products")
+        fetch("http://127.0.0.1:3000/api/v1/products")
             .then((response) => response.json())
             .then((data) => {
                 if (!filterQuery) {
@@ -16,15 +16,14 @@ function FarmProducts() {
                 } else {
                     setProducts(
                         data.filter((product) =>
-                            product.product_name.toLowerCase().includes(filterQuery.toLocaleLowerCase()))
+                            product.name.toLowerCase().includes(filterQuery.toLocaleLowerCase()))
                     )
                 }
             })
     }, [filterQuery])
 
     return (
-        <div className="products-container" >
-            <br />
+        <div className="donations-container" >
             <div class="search" >
                 <input
                     type="text"
@@ -38,28 +37,29 @@ function FarmProducts() {
             </div>
             <br></br>
 
-            <h5>Farm Products</h5>
-            <div>
+            <h3>Farm Products</h3>
+            <div className="container">
                 {products.map((product) => {
                     return (
-                        <div class="card rounded-3" style="width: 18rem;">
-                            <img src="..." class="card-img-top" alt="..." />
-                            <div class="card-body">
-                                <h5 class="card-title"> {product.product_name} </h5>
-                                <p class="card-text"> {product.quantity} /  {product.unit_measure} </p>
-                                <p class="card-text"> {product.product_price} per {product.unit_measure} </p>
-                                <p class="card-text"> {product.location}</p>
+                            <div className="each-card" key={product.id} >
+                                <img src={product.image_url} class="card-img-top rounded" alt="prod" />
+                                <table className="table">
+                                    <tbody>
+                                        <tr>
+                                            <td>Produce: </td>
+                                            <td> {product.name}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Price: </td>
+                                            <td>{product.price}</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Quantity:</td>
+                                            <td>{product.quantity} </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
-                            <div className="d-grid gap-2 d-md-block">
-                                <div class="badge bg-primary text-wrap" style="width: 6rem;">
-                                    <Link to={`/add-to-cart`} >Place Order</Link>
-                                </div>
-
-                                <div class="badge bg-primary text-wrap" style="width: 6rem;">
-                                    <Link to={`/add-donation`} >Donate</Link>
-                                </div>
-                            </div>
-                        </div>
                     )
                 })}
             </div>

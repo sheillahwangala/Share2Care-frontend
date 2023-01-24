@@ -7,7 +7,7 @@ import "./navbar.css"
 function Navbar() {
 
     return (
-        <nav className="navbar navbar-expand-sm navbar-dark bg-black px-5">
+        <nav className="navbar navbar-expand-sm navbar-dark bg-black px-5 fixed-top">
             <NavLink to='/' className="navbar-brand" > Share2Care <IoIosBulb />  </NavLink>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span className="navbar-toggler-icon"></span>

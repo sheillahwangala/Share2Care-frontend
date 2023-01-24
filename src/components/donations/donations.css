@@ -1,0 +1,23 @@
+.donations-container{
+    margin-top: 8%;
+}
+.donations-container h3{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+.each-card{
+    width: 300px;
+    height: 350px;
+    background-color: #E4EDFF;
+    margin: 16px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 12px; 
+    line-height: 15px;
+    justify-content: space-evenly;
+}

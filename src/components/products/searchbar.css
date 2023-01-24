@@ -5,7 +5,7 @@
     font-size: 16px;
     border-color: #F8FFDB;
     padding: 8px;
-    margin-left: 10%;
+    margin-left: 25%;
 
 }
 
@@ -28,3 +28,9 @@
     top: 20px;
     left: 16px;
 }
+
+/* .products-container {
+    margin: 2%;
+    display: flex;
+    flex-wrap: wrap;
+} */
