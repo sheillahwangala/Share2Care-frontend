@@ -16,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Template>
           <Routes>
-            <Route path="/signup" index element={<Login />} />
+            <Route path="/signup" index element={<SignUp />} />
             <Route path="/login" index element={<Login />} />
             <Route path="/" index element={<HomePage />} />
             <Route path="/farmproducts" index element={<FarmProducts />} />
