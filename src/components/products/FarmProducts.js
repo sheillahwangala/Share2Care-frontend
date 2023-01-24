@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import "./searchbar.css"
 
-function FarmProduce() {
+function FarmProducts() {
 
     const [products, setProducts] = useState([]);
     const [filterQuery, setFilterQuery] = useState("");
@@ -41,20 +42,21 @@ function FarmProduce() {
             <div>
                 {products.map((product) => {
                     return (
-                        <div class="card" style="width: 18rem;">
+                        <div class="card rounded-3" style="width: 18rem;">
                             <img src="..." class="card-img-top" alt="..." />
                             <div class="card-body">
                                 <h5 class="card-title"> {product.product_name} </h5>
                                 <p class="card-text"> {product.quantity} /  {product.unit_measure} </p>
                                 <p class="card-text"> {product.product_price} per {product.unit_measure} </p>
-                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                <p class="card-text"> {product.location}</p>
                             </div>
                             <div className="d-grid gap-2 d-md-block">
-                                <div className="btnholder">
-                                    <Link to={`/add-to-cart`} ><span class="btn" id='proposetender'>Place Order</span></Link>
+                                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                                    <Link to={`/add-to-cart`} >Place Order</Link>
                                 </div>
-                                <div className="btnholder">
-                                    <Link to={`/add-donation`} ><span class="btn" id='proposetender'>Donate</span></Link>
+
+                                <div class="badge bg-primary text-wrap" style="width: 6rem;">
+                                    <Link to={`/add-donation`} >Donate</Link>
                                 </div>
                             </div>
                         </div>
@@ -65,4 +67,4 @@ function FarmProduce() {
         </div>
     )
 }
-export default FarmProduce;
+export default FarmProducts;

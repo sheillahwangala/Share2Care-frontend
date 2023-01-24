@@ -18,7 +18,7 @@ function Navbar() {
                         <NavLink to='/' className="nav-link">Home <span className="sr-only"></span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/farmproduce' className="nav-link" >Farm Produce</NavLink>
+                        <NavLink to='/farmproducts' className="nav-link" >Farm Products</NavLink>
                     </li>
                     <li className="nav-item">
                         <NavLink to='/donate' className="nav-link" >Donate</NavLink>

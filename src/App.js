@@ -1,7 +1,8 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import FarmersPage from './components/farmer/FarmersPage';
 import HomePage from './components/homepage/HomePage';
-import FarmProduce from './components/produce/FarmProduce';
+import FarmProducts from './components/products/FarmProducts';
 import Template from './components/template/Template';
 
 function App() {
@@ -11,7 +12,8 @@ function App() {
       <Template>
         <Routes>
           <Route path="/" index element={<HomePage />} />
-          <Route path="/farmproduce" index element={<FarmProduce />} />
+          <Route path="/farmproducts" index element={<FarmProducts />} />
+          <Route path="/farmers-page" index element={<FarmersPage />} />
         </Routes>
       </Template>
     </BrowserRouter>
