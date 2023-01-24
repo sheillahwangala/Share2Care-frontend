@@ -35,6 +35,32 @@ function FarmProduce() {
                     className="form-searchbar"
                 />
             </div>
+            <br></br>
+
+            <h5>Farm Products</h5>
+            <div>
+                {products.map((product) => {
+                    return (
+                        <div class="card" style="width: 18rem;">
+                            <img src="..." class="card-img-top" alt="..." />
+                            <div class="card-body">
+                                <h5 class="card-title"> {product.product_name} </h5>
+                                <p class="card-text"> {product.quantity} /  {product.unit_measure} </p>
+                                <p class="card-text"> {product.product_price} per {product.unit_measure} </p>
+                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                            </div>
+                            <div className="d-grid gap-2 d-md-block">
+                                <div className="btnholder">
+                                    <Link to={`/add-to-cart`} ><span class="btn" id='proposetender'>Place Order</span></Link>
+                                </div>
+                                <div className="btnholder">
+                                    <Link to={`/add-donation`} ><span class="btn" id='proposetender'>Donate</span></Link>
+                                </div>
+                            </div>
+                        </div>
+                    )
+                })}
+            </div>
 
         </div>
     )
