@@ -23,7 +23,7 @@ function FarmProducts() {
     }, [filterQuery])
 
     return (
-        <div>
+        <div className="products-container" >
             <br />
             <div class="search" >
                 <input

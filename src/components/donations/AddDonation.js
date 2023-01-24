@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Navigate } from "react-router-dom";
-import "./farmer.css"
+import "../farmer/farmer.css"
 
-function AddProduct() {
+function AddDonation() {
 
     const [product_name, setProduct_name] = useState("");
     const [image, setImage] = useState("");
@@ -27,7 +27,7 @@ function AddProduct() {
 
     const createProduct = (e) => {
         e.preventDefault();
-        fetch("APIHost/products", {
+        fetch("APIHost/donations", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -48,7 +48,7 @@ function AddProduct() {
 
     return (
         < div className="add-container" >
-            <h4>Add Product for Sell</h4>
+            <h4>Donate Farm Produce.</h4>
             <div className="d-flex flex-column justify-content-center w-50">
                 <label>Choose Product Image</label>
                 <input
@@ -99,7 +99,7 @@ function AddProduct() {
                     onClick={createProduct}
                     className="btn btn-primary my-4 w-50"
                 >
-                    Add Farm Produce.
+                    Add Donation.
                 </button>
             </div>
         </div >
@@ -107,4 +107,4 @@ function AddProduct() {
 
 
 }
-export default AddProduct;
+export default AddDonation;

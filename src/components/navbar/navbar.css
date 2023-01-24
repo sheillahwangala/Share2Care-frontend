@@ -19,3 +19,12 @@ body{
 .w-250{
     width: 350px;
 }
+.sidebar-container{
+    width: 15%;
+    background-color: #F8FFDB;
+    margin-top: 0%;
+    padding: 0%;
+}
+.sidebar-container a{
+    color: black;
+}

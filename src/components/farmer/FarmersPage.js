@@ -1,12 +1,12 @@
 import FarmProduce from "../products/FarmProducts";
-import AddProduct from "./AddProduct";
+import FarmerSidebar from "./FarmerSideBar";
 
 function FarmersPage (){
 
     return(
         <div>
+            <FarmerSidebar />
             <FarmProduce />
-            <AddProduct />
         </div>
     )
 
