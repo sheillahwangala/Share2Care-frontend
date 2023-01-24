@@ -1,16 +1,15 @@
 body{
     background-color:#eee;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .nav-link:hover{
-    background-color:#525252 !important;
+    background-color:#FC7300 !important;
 }
 
 .nav-link .fa{
     transition:all 1s;
     padding: 50px;
-    margin-left: 50px;
 }
 
 .nav-link:hover .fa{
