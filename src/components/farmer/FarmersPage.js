@@ -4,7 +4,7 @@ import FarmerSidebar from "./FarmerSideBar";
 function FarmersPage (){
 
     return(
-        <div>
+        <div className="farmerspage">
             <FarmerSidebar />
             <FarmProduce />
         </div>

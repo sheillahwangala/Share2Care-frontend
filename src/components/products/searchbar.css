@@ -1,9 +1,9 @@
 .form-searchbar {
     border-radius: 20px;
-    background-color: #F8FFDB;
+    background-color: #E4EDFF;
     width: 600px;
     font-size: 16px;
-    border-color: #F8FFDB;
+    border-color: #E4EDFF;
     padding: 8px;
     margin-left: 25%;
 
@@ -16,10 +16,10 @@
 
 .search input {
     color: #FC7300;
-    font-weight: bold;
+    font-weight: bold black;
     height: 40px;
     text-indent: 30px;
-    border: 2px solid #F8FFDB;
+    border: 2px solid #E4EDFF;
 
 }
 

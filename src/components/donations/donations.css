@@ -21,3 +21,6 @@
     line-height: 15px;
     justify-content: space-evenly;
 }
+.each-card img{
+    max-height: 55%;
+}

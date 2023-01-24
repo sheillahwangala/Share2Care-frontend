@@ -21,10 +21,12 @@ body{
 }
 .sidebar-container{
     width: 15%;
-    background-color: #F8FFDB;
+    background-color: #E4EDFF;
     margin-top: 0%;
-    padding: 0%;
+    padding-top: 5%;
 }
 .sidebar-container a{
     color: black;
+    font-size: large;
+    font-weight: bold;
 }
