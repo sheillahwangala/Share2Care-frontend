@@ -97,7 +97,7 @@ function AddProduct() {
                 <button
                     type="submit"
                     onClick={createProduct}
-                    className="btn btn-primary my-4 w-50"
+                    className="btn btn-success my-4 w-50"
                 >
                     Add Farm Produce.
                 </button>

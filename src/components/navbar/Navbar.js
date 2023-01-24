@@ -18,13 +18,16 @@ function Navbar() {
                         <NavLink to='/' className="nav-link">Home <span className="sr-only"></span></NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/farmproducts' className="nav-link" >Farm Products</NavLink>
+                        <NavLink to='/farmproducts' className="nav-link" >Consumer</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/donate' className="nav-link" >Donate</NavLink>
+                        <NavLink to='/farmers-page' className="nav-link" >Farmer</NavLink>
                     </li>
                     <li className="nav-item">
-                        <NavLink to='/signin' className="nav-link">Sign In</NavLink>
+                        <NavLink to='/donations' className="nav-link" >Donations</NavLink>
+                    </li>
+                    <li className="nav-item">
+                        <NavLink to='/signup' className="nav-link">Sign Up</NavLink>
                     </li>
                     <li className="nav-item dropdown">
                     </li>

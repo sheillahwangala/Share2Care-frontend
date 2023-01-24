@@ -58,6 +58,10 @@ function Donations() {
                                         <td>Quantity Donated:</td>
                                         <td>{donation.quantity} </td>
                                     </tr>
+                                    <tr>
+                                        <td>Status:</td>
+                                        <td>{donation.status} </td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>

@@ -2,6 +2,8 @@
 @media only screen and (max-width: 600px) {
   .signup__form {
     width: 90%;
+    margin-top: 8%;
+    margin-left: 30%;
   }
   .signup__inputs {
     width: 100%;
@@ -12,6 +14,8 @@
 @media only screen and (min-width: 600px) {
   .signup__form {
     width: 300px;
+    margin-top: 8%;
+    margin-left: 30%;
   }
   .signup__inputs {
     width: 100%;
